@@ -14,7 +14,5 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   successMessage.textContent = 'Message sent successfully! I will contact you soon.';
   successMessage.classList.remove('d-none');
 
-  const subject = encodeURIComponent('Contact from portfolio website');
-  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-  window.location.href = `mailto:marioporra9@gmail.com?subject=${subject}&body=${body}`;
+  document.getElementById('contactForm').reset();
 });
