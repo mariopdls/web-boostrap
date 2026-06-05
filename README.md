@@ -2,11 +2,13 @@
 
 🌐 **[English](#english) · [Español](#español)**
 
+
+
 ---
 
 ## English
 
-My first personal portfolio, built as a first-year Web Application Development (DAW) student. It's a simple, responsive single-page website where I introduce myself and show my skills, projects, education and work experience.
+Personal portfolio built with HTML, CSS and Bootstrap 5, created as a first-year Web Application Development (DAW) student. It's a responsive single-page website that brings together, in one place, who I am, my front-end and back-end skills, my projects, my education and my work experience.
 
 ### Live demo
 
@@ -49,7 +51,7 @@ My first personal portfolio, built as a first-year Web Application Development (
 
 ## Español
 
-Mi primer portfolio personal, hecho como estudiante de 1º de Desarrollo de Aplicaciones Web (DAW). Es una página web sencilla y responsive de una sola página, donde me presento y muestro mis habilidades, proyectos, formación y experiencia laboral.
+Portfolio personal hecho con HTML, CSS y Bootstrap 5, creado como estudiante de 1º de Desarrollo de Aplicaciones Web (DAW). Es una web responsive de una sola página que reúne, en un mismo sitio, quién soy, mis habilidades de front-end y back-end, mis proyectos, mi formación y mi experiencia laboral.
 
 ### Demo
 
