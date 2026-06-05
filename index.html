@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Mario</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio">Mario Porras</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="inicio" class="hero text-center" style="margin-top: 56px;">
+    <div class="container">
+      <img src="images/perfil.png" alt="Foto de perfil" class="foto-perfil mb-3">
+
+      <h1 class="fw-bold">Mario Porras</h1>
+      <p class="lead text-secondary"> Web Application Development</p>
+
+      <a href="#proyectos" class="btn btn-primary mt-2">See my projects</a>
+    </div>
+  </section>
+
+  <section id="sobre-mi">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre mí</h2>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card shadow-sm border-0">
+            <img src="images/graduation.jpg" alt="Graduation photo" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <p class="text-center text-md-start">
+            Hi! I'm Mario, a first-year student in the Web Application Development program. I graduated in History and now I am building a career in web development. I love learning new technologies and combining my analytical skills with creative web design.
+          </p>
+          <p class="text-center text-md-start">
+            So far I have knowledge of HTML, CSS and I'm starting with Bootstrap. I also work with both front-end and back-end tools. This is my first portfolio, so I'll keep improving it step by step.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="habilidades" class="bg-white">
+
+  <!-- BLOQUE 1: FRONT -->
+  <div class="container">
+    <h2 class="text-center mb-4">Front</h2>
+
+    <div class="text-center mb-4">
+      <span class="badge bg-primary m-1">HTML</span>
+      <span class="badge bg-success m-1">CSS</span>
+      <span class="badge bg-info text-dark m-1">Bootstrap</span>
+      <span class="badge bg-warning text-dark m-1">JavaScript (básico)</span>
+      <span class="badge bg-secondary m-1">React</span>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <label>HTML</label>
+        <div class="progress mb-3">
+          <div class="progress-bar" style="width: 95%;">95%</div>
+        </div>
+
+        <label>CSS</label>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 80%;">80%</div>
+        </div>
+
+        <label>JavaScript</label>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-warning" style="width: 60%;">60%</div>
+        </div>
+
+        <label>Bootstrap</label>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-info" style="width: 30%;">30%</div>
+        </div>
+
+        <label>React</label>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-dark" style="width: 20%;">20%</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card shadow-sm mb-5 tools-card">
+      <div class="card-body">
+        <h5 class="card-title text-center">Front Tools</h5>
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-10">
+            <div class="text-center tools-list">
+              <span class="badge bg-dark">Git</span>
+              <span class="badge bg-secondary">Bash</span>
+              <span class="badge bg-info text-dark">Linux</span>
+              <span class="badge bg-warning text-dark">Windows</span>
+              <span class="badge bg-primary">Mac OS</span>
+              <span class="badge bg-success">Figma</span>
+              <span class="badge bg-danger">DIA</span>
+              <span class="badge bg-light text-dark border">JSON</span>
+              <span class="badge bg-light text-dark border">XML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BLOQUE 2: BACK -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Back</h2>
+
+    <div class="text-center mb-4">
+      <span class="badge bg-danger m-1">Java</span>
+      <span class="badge bg-primary m-1">MySQL</span>
+      <span class="badge bg-warning text-dark m-1">Git</span>
+      <span class="badge bg-success m-1">JUnit</span>
+      <span class="badge bg-info text-dark m-1">Maven</span>
+      <span class="badge bg-secondary m-1">Eclipse</span>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <label>Java</label>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-danger" style="width: 75%;">75%</div>
+        </div>
+
+        <label>MySQL</label>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-primary" style="width: 70%;">70%</div>
+        </div>
+
+        <label>Git</label>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-warning" style="width: 65%;">65%</div>
+        </div>
+
+        <label>JUnit</label>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 60%;">60%</div>
+        </div>
+
+        <label>Maven</label>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-info" style="width: 55%;">55%</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card shadow-sm mb-5 tools-card">
+      <div class="card-body">
+        <h5 class="card-title text-center">Back Tools</h5>
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-10">
+            <div class="text-center tools-list">
+              <span class="badge bg-primary">Visual Studio</span>
+              <span class="badge bg-secondary">Eclipse</span>
+              <span class="badge bg-info text-dark">DBeaver</span>
+              <span class="badge bg-dark">VirtualBox</span>
+              <span class="badge bg-warning text-dark">Docker</span>
+              <span class="badge bg-success">MySQL</span>
+              <span class="badge bg-danger">Oracle</span>
+              <span class="badge bg-secondary">Python</span>
+              <span class="badge bg-dark">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section id="proyectos">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+
+    <div class="row">
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/alianzaReb.png" class="card-img-top" alt="Star Wars">
+          <div class="card-body">
+            <h5 class="card-title">Star Wars fan-made web</h5>
+            <p class="card-text">Webpage that I did with my teamer Reyes Aguilar.</p>
+            <a href="https://web-star-wars.vercel.app" class="btn btn-primary btn-sm">See project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/image.png" class="card-img-top" alt="Nirvana">
+          <div class="card-body">
+            <h5 class="card-title">Heart-Shaped Club</h5>
+            <p class="card-text">Nirvana's fan-made web. Project Members: Reyes Aguilar y Tristán Martínez.</p>
+            <a href="https://sage-sunflower-3abc10.netlify.app" class="btn btn-primary btn-sm">See project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/webAgainst.png" class="card-img-top" alt="Contra la violencia de género">
+          <div class="card-body">
+            <h5 class="card-title">Asociación Vidas Libres</h5>
+            <p class="card-text">My first website. A cause-driven project to raise awareness about gender-based violence.</p>
+            <a href="https://againstviolence.netlify.app" class="btn btn-primary btn-sm">See project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/unnamed.png" class="card-img-top" alt="Kimetsu no Yaiba">
+          <div class="card-body">
+            <h5 class="card-title">Web de Kimetsu no Yaiba</h5>
+            <p class="card-text">Project that I carried out with my teammates during my internship at CaixaBank Tech.</p>
+            <p><strong>Confidential project</strong></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section id="formacion" class="bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Education</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <ul class="list-group">
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="images/11096817.png" alt="IES Jacarandá" class="rounded">
+            <div class="d-flex justify-content-between w-100">
+              <div>
+                <h5 class="mb-0">CFGS Web Application Development (DAW)</h5>
+                <small class="text-muted">I.E.S. Jacarandá</small>
+              </div>
+              <small class="text-muted text-nowrap">2025 - present</small>
+            </div>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="images/descarga.jpg" alt="Universidad de Sevilla" class="rounded">
+            <div class="d-flex justify-content-between w-100">
+              <div>
+                <h5 class="mb-0">Degree in History</h5>
+                <small class="text-muted">Universidad de Sevilla</small>
+                <p class="mb-0 mt-1 text-muted" style="font-size: 0.9rem;">Advanced writing and communication skills.</p>
+              </div>
+              <small class="text-muted text-nowrap">2020 - 2025</small>
+            </div>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="images/UPO.png" alt="Universidad Pablo de Olavide" class="rounded">
+            <div class="d-flex justify-content-between w-100">
+              <div>
+                <h5 class="mb-0">Field Archaeology and Cultural Management</h5>
+                <small class="text-muted">Universidad Pablo de Olavide</small>
+                <p class="mb-0 mt-1 text-muted" style="font-size: 0.9rem;">Coordination with professionals from different sectors.</p>
+              </div>
+              <small class="text-muted text-nowrap">2022</small>
+            </div>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="images/ulloa.jpg" alt="IES Antonio de Ulloa" class="rounded">
+            <div class="d-flex justify-content-between w-100">
+              <div>
+                <h5 class="mb-0">A-Levels (Bachillerato)</h5>
+                <small class="text-muted">I.E.S. Antonio de Ulloa</small>
+              </div>
+              <small class="text-muted text-nowrap">2020</small>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <div class="container">
+    <h2 class="text-center mb-4">Experience</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <ul class="list-group">
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="images/cabktech_logo.jpg" alt="CaixaBank Tech" class="rounded">
+            <div class="d-flex justify-content-between w-100">
+              <div>
+                <h5 class="mb-0">Web Developer — Quality Assistance Dept.</h5>
+                <small class="text-muted">CaixaBank Tech</small>
+              </div>
+              <small class="text-muted text-nowrap">2026</small>
+            </div>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="images/aytorda.png" alt="Ayuntamiento de La Rinconada" class="rounded">
+            <div class="d-flex justify-content-between w-100">
+              <div>
+                <h5 class="mb-0">Library Assistant</h5>
+                <small class="text-muted">Ayuntamiento de La Rinconada</small>
+                <ul class="mt-1 mb-0 text-muted" style="font-size: 0.9rem;">
+                  <li>Document management and archive organisation.</li>
+                  <li>User support and incident resolution.</li>
+                </ul>
+              </div>
+              <small class="text-muted text-nowrap">2024</small>
+            </div>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="images/UPO.png" alt="Universidad Pablo de Olavide" class="rounded">
+            <div class="d-flex justify-content-between w-100">
+              <div>
+                <h5 class="mb-0">Field Assistant & Heritage Analysis</h5>
+                <small class="text-muted">Extracurricular Internship · Universidad Pablo de Olavide</small>
+                <ul class="mt-1 mb-0 text-muted" style="font-size: 0.9rem;">
+                  <li>Digitisation and administration.</li>
+                  <li>Documentation analysis.</li>
+                </ul>
+              </div>
+              <small class="text-muted text-nowrap">2022</small>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contacto">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+
+          <form id="contactForm">
+            <div class="mb-3">
+              <label class="form-label" for="contactName">Name</label>
+              <input id="contactName" name="name" type="text" class="form-control" placeholder="Your name" autocomplete="name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="contactEmail">Email</label>
+              <input id="contactEmail" name="email" type="email" class="form-control" placeholder="youremail@example.com" autocomplete="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send</button>
+            <div id="contactSuccess" class="alert alert-success d-none mt-3" role="alert">
+              Message sent successfully! I will contact you soon.
+            </div>
+          </form>
+
+          <div class="text-center mt-4">
+            <a href="https://github.com/mariopdls" target="_blank" rel="noopener noreferrer" class="text-dark mx-2 fs-3"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/marioporrasdelossantos/" target="_blank" rel="noopener noreferrer" class="text-dark mx-2 fs-3"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:marioporra9@gmail.com" class="text-dark mx-2 fs-3"><i class="bi bi-envelope"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2025 Mario - Portfolio made with Bootstrap 5</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
