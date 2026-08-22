@@ -456,6 +456,45 @@ h5,
   box-shadow: 0 12px 30px rgba(17, 24, 39, 0.03);
 }
 
+.timeline-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timeline-brand,
+.company-badge {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.04);
+}
+
+.timeline-brand.no-image {
+  background: linear-gradient(135deg, rgba(29, 78, 216, 0.08), rgba(124, 58, 237, 0.08));
+  color: var(--primary);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.timeline-brand img,
+.company-badge img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+.timeline-copy {
+  flex: 1;
+}
+
 .timeline-content h3 {
   margin: 0;
   font-size: 1.2rem;
@@ -490,6 +529,13 @@ h5,
   border-radius: 18px;
   padding: 1.3rem 1.5rem;
   box-shadow: 0 12px 28px rgba(17, 24, 39, 0.03);
+}
+
+.experience-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
 }
 
 .experience-role {
