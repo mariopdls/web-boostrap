@@ -3,413 +3,517 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Mario</title>
+  <meta name="description" content="Portfolio profesional de Mario Porras, desarrollador web con enfoque en interfaces modernas, UX y soluciones digitales.">
+  <title>Mario Porras | Portfolio</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#inicio">Mario Porras</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="d-flex align-items-center gap-3">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <button class="lang-btn active" data-lang="es" type="button">ES</button>
+          <button class="lang-btn" data-lang="en" type="button">EN</button>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
       <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre-mi">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#formacion">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experiencia">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contact</a></li>
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#inicio" data-i18n="nav.home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion" data-i18n="nav.education">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto" data-i18n="nav.contact">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section id="inicio" class="hero text-center" style="margin-top: 56px;">
-    <div class="container">
-      <img src="images/perfil.png" alt="Foto de perfil" class="foto-perfil mb-3">
+  <header id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="hero-badge" data-i18n="hero.badge">Desarrollador web • Creativo • En crecimiento</span>
+        <h1 class="display-4 fw-bold mb-3">Mario Porras</h1>
+        <p class="lead text-muted mb-4" data-i18n="hero.role">Desarrollador web con enfoque en interfaces modernas, experiencias útiles y soluciones digitales con impacto real.</p>
 
-      <h1 class="fw-bold">Mario Porras</h1>
-      <p class="lead text-secondary"> Web Application Development</p>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <a href="#proyectos" class="btn btn-primary btn-lg" data-i18n="hero.projectsBtn">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-outline-primary btn-lg" data-i18n="hero.contactBtn">Hablemos</a>
+        </div>
 
-      <a href="#proyectos" class="btn btn-primary mt-2">See my projects</a>
-    </div>
-  </section>
+        <div class="hero-highlights">
+          <span><strong>HTML/CSS</strong></span>
+          <span><strong>Bootstrap</strong></span>
+          <span><strong>Java</strong></span>
+          <span><strong>MySQL</strong></span>
+        </div>
+      </div>
 
-  <section id="sobre-mi">
-    <div class="container">
-      <h2 class="text-center text-md-start mb-4">About me</h2>
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <div class="card shadow-sm border-0">
-            <img src="images/graduation.png" alt="Graduation photo" class="img-fluid rounded">
+      <div class="hero-visual">
+        <div class="profile-card">
+          <img src="images/perfil.png" alt="Foto de perfil de Mario Porras" class="foto-perfil">
+          <div class="mini-card">
+            <small data-i18n="hero.available">Disponible para proyectos</small>
+            <strong>2026</strong>
           </div>
         </div>
-        <div class="col-md-7">
-          <p class="text-center text-md-start">
-            Hi! I'm Mario, a first-year student in the Web Application Development program. I graduated in History and now I am building a career in web development. I love learning new technologies and combining my analytical skills with creative web design.
-          </p>
-          <p class="text-center text-md-start">
-            So far I have knowledge of HTML, CSS and I'm starting with Bootstrap. I also work with both front-end and back-end tools. This is my first portfolio, so I'll keep improving it step by step.
-           <br><br> Thank you for visiting and feel free to contact me if you want to collaborate on a project or just say hi!
-          </p>
-        </div>
       </div>
     </div>
-  </section>
+  </header>
 
-<section id="habilidades" class="bg-white">
-
-  <!-- BLOQUE 1: FRONT -->
-  <div class="container">
-    <h2 class="text-center mb-4">Front</h2>
-
-    <div class="text-center mb-4">
-      <span class="badge bg-primary m-1">HTML</span>
-      <span class="badge bg-success m-1">CSS</span>
-      <span class="badge bg-info text-dark m-1">Bootstrap</span>
-      <span class="badge bg-warning text-dark m-1">JavaScript (básico)</span>
-      <span class="badge bg-secondary m-1">React</span>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-
-        <label>HTML</label>
-        <div class="progress mb-3">
-          <div class="progress-bar" style="width: 95%;">95%</div>
+  <main>
+    <section id="sobre-mi" class="section-space">
+      <div class="container">
+        <div class="section-header mb-5">
+          <span class="section-kicker" data-i18n="about.kicker">Sobre mí</span>
+          <h2 data-i18n="about.title">Creo productos digitales que combinan claridad, diseño y utilidad.</h2>
         </div>
 
-        <label>CSS</label>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 80%;">80%</div>
-        </div>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-4">
+            <div class="image-card">
+              <img src="images/graduation.png" alt="Mario durante la graduación" class="img-fluid rounded-4">
+            </div>
+          </div>
 
-        <label>JavaScript</label>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-warning" style="width: 60%;">60%</div>
-        </div>
-
-        <label>Bootstrap</label>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-info" style="width: 30%;">30%</div>
-        </div>
-
-        <label>React</label>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-dark" style="width: 20%;">20%</div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="card shadow-sm mb-5 tools-card">
-      <div class="card-body">
-        <h5 class="card-title text-center">Front Tools</h5>
-        <div class="row justify-content-center mt-3">
-          <div class="col-12 col-md-10">
-            <div class="text-center tools-list">
-              <span class="badge bg-dark">Git</span>
-              <span class="badge bg-secondary">Bash</span>
-              <span class="badge bg-info text-dark">Linux</span>
-              <span class="badge bg-warning text-dark">Windows</span>
-              <span class="badge bg-primary">Mac OS</span>
-              <span class="badge bg-success">Figma</span>
-              <span class="badge bg-danger">DIA</span>
-              <span class="badge bg-light text-dark border">JSON</span>
-              <span class="badge bg-light text-dark border">XML</span>
+          <div class="col-lg-8">
+            <div class="story-box">
+              <p data-i18n="about.p1">Soy Mario Porras, estudiante de Desarrollo de Aplicaciones Web y graduado en Historia. Estoy construyendo mi carrera profesional en el desarrollo web, combinando pensamiento analítico, creatividad y capacidad de trabajo en equipo.</p>
+              <p data-i18n="about.p2">Me interesa crear interfaces limpias, experiencias sencillas y soluciones útiles para personas y empresas. Me apasiona aprender tecnologías nuevas y aplicar lo aprendido en proyectos reales.</p>
+              <p data-i18n="about.p3">Este portfolio es una muestra de mi evolución profesional. Cada proyecto me ayuda a mejorar, a comunicar mejor mis ideas y a crecer como desarrollador con una visión más estratégica.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- BLOQUE 2: BACK -->
-  <div class="container mt-5">
-    <h2 class="text-center mb-4">Back</h2>
-
-    <div class="text-center mb-4">
-      <span class="badge bg-danger m-1">Java</span>
-      <span class="badge bg-primary m-1">MySQL</span>
-      <span class="badge bg-warning text-dark m-1">Git</span>
-      <span class="badge bg-success m-1">JUnit</span>
-      <span class="badge bg-info text-dark m-1">Maven</span>
-      <span class="badge bg-secondary m-1">Eclipse</span>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-
-        <label>Java</label>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-danger" style="width: 75%;">75%</div>
+    <section id="habilidades" class="section-space soft-panel">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-kicker" data-i18n="skills.kicker">Habilidades</span>
+          <h2 data-i18n="skills.title">Tecnologías y herramientas con las que trabajo.</h2>
         </div>
 
-        <label>MySQL</label>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-primary" style="width: 70%;">70%</div>
-        </div>
-
-        <label>Git</label>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-warning" style="width: 65%;">65%</div>
-        </div>
-
-        <label>JUnit</label>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 60%;">60%</div>
-        </div>
-
-        <label>Maven</label>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-info" style="width: 55%;">55%</div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="card shadow-sm mb-5 tools-card">
-      <div class="card-body">
-        <h5 class="card-title text-center">Back Tools</h5>
-        <div class="row justify-content-center mt-3">
-          <div class="col-12 col-md-10">
-            <div class="text-center tools-list">
-              <span class="badge bg-primary">Visual Studio</span>
-              <span class="badge bg-secondary">Eclipse</span>
-              <span class="badge bg-info text-dark">DBeaver</span>
-              <span class="badge bg-dark">VirtualBox</span>
-              <span class="badge bg-warning text-dark">Docker</span>
-              <span class="badge bg-success">MySQL</span>
-              <span class="badge bg-danger">Oracle</span>
-              <span class="badge bg-secondary">Python</span>
-              <span class="badge bg-dark">Git</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-<section id="proyectos">
-  <div class="container">
-    <h2 class="text-center mb-4">Projects</h2>
-
-    <div class="row">
-
-      <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="images/alianzaReb.png" class="card-img-top" alt="Star Wars">
-          <div class="card-body">
-            <h5 class="card-title">Star Wars fan-made web</h5>
-            <p class="card-text">Webpage that I did with my teamer Reyes Aguilar.</p>
-            <a href="https://web-star-wars.vercel.app" class="btn btn-primary btn-sm">See project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="images/image.png" class="card-img-top" alt="Nirvana">
-          <div class="card-body">
-            <h5 class="card-title">Heart-Shaped Club</h5>
-            <p class="card-text">Nirvana's fan-made web. Project Members: Reyes Aguilar y Tristán Martínez.</p>
-            <a href="https://sage-sunflower-3abc10.netlify.app" class="btn btn-primary btn-sm">See project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="images/webAgainst.png" class="card-img-top" alt="Contra la violencia de género">
-          <div class="card-body">
-            <h5 class="card-title">Asociación Vidas Libres</h5>
-            <p class="card-text">My first website. A cause-driven project to raise awareness about gender-based violence.</p>
-            <a href="https://againstviolence.netlify.app" class="btn btn-primary btn-sm">See project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="images/unnamed.png" class="card-img-top" alt="Kimetsu no Yaiba">
-          <div class="card-body">
-            <h5 class="card-title">Web de Kimetsu no Yaiba</h5>
-            <p class="card-text">Project that I carried out with my teammates during my internship at CaixaBank Tech.</p>
-            <p><strong>Confidential project</strong></p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  </section>
-
-  <section id="formacion" class="bg-white">
-  <div class="container">
-    <h2 class="text-center mb-4">Education</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <ul class="list-group">
-
-          <li class="list-group-item d-flex align-items-center gap-3">
-            <img src="images/11096817.png" alt="IES Jacarandá" class="rounded">
-            <div class="d-flex justify-content-between w-100">
-              <div>
-                <h5 class="mb-0">CFGS Web Application Development (DAW)</h5>
-                <small class="text-muted">I.E.S. Jacarandá</small>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="skill-panel">
+              <h3 class="skill-title" data-i18n="skills.front">Front-end</h3>
+              <div class="badges-group mb-4">
+                <span class="skill-badge html">HTML</span>
+                <span class="skill-badge css">CSS</span>
+                <span class="skill-badge bootstrap">Bootstrap</span>
+                <span class="skill-badge js">JavaScript</span>
+                <span class="skill-badge react">React</span>
               </div>
-              <small class="text-muted text-nowrap">2025 - present</small>
-            </div>
-          </li>
 
-          <li class="list-group-item d-flex align-items-center gap-3">
-            <img src="images/descarga.jpg" alt="Universidad de Sevilla" class="rounded">
-            <div class="d-flex justify-content-between w-100">
-              <div>
-                <h5 class="mb-0">Degree in History</h5>
-                <small class="text-muted">Universidad de Sevilla</small>
-                <p class="mb-0 mt-1 text-muted" style="font-size: 0.9rem;">Advanced writing and communication skills.</p>
+              <div class="progress-labels">
+                <span>HTML</span><span>95%</span>
               </div>
-              <small class="text-muted text-nowrap">2020 - 2025</small>
-            </div>
-          </li>
+              <div class="progress mb-3"><div class="progress-bar" style="width: 95%"></div></div>
 
-          <li class="list-group-item d-flex align-items-center gap-3">
-            <img src="images/UPO.png" alt="Universidad Pablo de Olavide" class="rounded">
-            <div class="d-flex justify-content-between w-100">
-              <div>
-                <h5 class="mb-0">Field Archaeology and Cultural Management</h5>
-                <small class="text-muted">Universidad Pablo de Olavide</small>
-                <p class="mb-0 mt-1 text-muted" style="font-size: 0.9rem;">Coordination with professionals from different sectors.</p>
+              <div class="progress-labels">
+                <span>CSS</span><span>86%</span>
               </div>
-              <small class="text-muted text-nowrap">2022</small>
-            </div>
-          </li>
+              <div class="progress mb-3"><div class="progress-bar bg-success" style="width: 86%"></div></div>
 
-          <li class="list-group-item d-flex align-items-center gap-3">
-            <img src="images/ulloa.jpg" alt="IES Antonio de Ulloa" class="rounded">
-            <div class="d-flex justify-content-between w-100">
-              <div>
-                <h5 class="mb-0">A-Levels (Bachillerato)</h5>
-                <small class="text-muted">I.E.S. Antonio de Ulloa</small>
+              <div class="progress-labels">
+                <span>JavaScript</span><span>68%</span>
               </div>
-              <small class="text-muted text-nowrap">2020</small>
-            </div>
-          </li>
+              <div class="progress mb-3"><div class="progress-bar bg-warning" style="width: 68%"></div></div>
 
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="experiencia">
-  <div class="container">
-    <h2 class="text-center mb-4">Experience</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <ul class="list-group">
-
-          <li class="list-group-item d-flex align-items-center gap-3">
-            <img src="images/cabktech_logo.jpg" alt="CaixaBank Tech" class="rounded">
-            <div class="d-flex justify-content-between w-100">
-              <div>
-                <h5 class="mb-0">Web Developer — Quality Assistance Dept.</h5>
-                <small class="text-muted">CaixaBank Tech</small>
+              <div class="progress-labels">
+                <span>Bootstrap</span><span>80%</span>
               </div>
-              <small class="text-muted text-nowrap">2026</small>
+              <div class="progress mb-3"><div class="progress-bar bg-info" style="width: 80%"></div></div>
             </div>
-          </li>
-
-          <li class="list-group-item d-flex align-items-center gap-3">
-            <img src="images/aytorda.png" alt="Ayuntamiento de La Rinconada" class="rounded">
-            <div class="d-flex justify-content-between w-100">
-              <div>
-                <h5 class="mb-0">Library Assistant</h5>
-                <small class="text-muted">Ayuntamiento de La Rinconada</small>
-                <ul class="mt-1 mb-0 text-muted" style="font-size: 0.9rem;">
-                  <li>Document management and archive organisation.</li>
-                  <li>User support and incident resolution.</li>
-                </ul>
-              </div>
-              <small class="text-muted text-nowrap">2024</small>
-            </div>
-          </li>
-
-          <li class="list-group-item d-flex align-items-center gap-3">
-            <img src="images/UPO.png" alt="Universidad Pablo de Olavide" class="rounded">
-            <div class="d-flex justify-content-between w-100">
-              <div>
-                <h5 class="mb-0">Field Assistant & Heritage Analysis</h5>
-                <small class="text-muted">Extracurricular Internship · Universidad Pablo de Olavide</small>
-                <ul class="mt-1 mb-0 text-muted" style="font-size: 0.9rem;">
-                  <li>Digitisation and administration.</li>
-                  <li>Documentation analysis.</li>
-                </ul>
-              </div>
-              <small class="text-muted text-nowrap">2022</small>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <section id="contacto">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-
-          <form id="contactForm">
-            <div class="mb-3">
-              <label class="form-label" for="contactName">Name</label>
-              <input id="contactName" name="name" type="text" class="form-control" placeholder="Your name" autocomplete="name" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label" for="contactEmail">Email</label>
-              <input id="contactEmail" name="email" type="email" class="form-control" placeholder="youremail@example.com" autocomplete="email" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label" for="contactMessage">Message</label>
-              <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder="Write your message..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Send</button>
-            <div id="contactSuccess" class="alert alert-success d-none mt-3" role="alert">
-              Message sent successfully! I will contact you soon.
-            </div>
-          </form>
-
-          <div class="text-center mt-4">
-            <a href="https://github.com/mariopdls" target="_blank" rel="noopener noreferrer" class="text-dark mx-2 fs-3"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/marioporrasdelossantos/" target="_blank" rel="noopener noreferrer" class="text-dark mx-2 fs-3"><i class="bi bi-linkedin"></i></a>
-            <a href="mailto:marioporra9@gmail.com" class="text-dark mx-2 fs-3"><i class="bi bi-envelope"></i></a>
           </div>
 
+          <div class="col-lg-6">
+            <div class="skill-panel">
+              <h3 class="skill-title" data-i18n="skills.back">Back-end</h3>
+              <div class="badges-group mb-4">
+                <span class="skill-badge java">Java</span>
+                <span class="skill-badge mysql">MySQL</span>
+                <span class="skill-badge git">Git</span>
+                <span class="skill-badge junit">JUnit</span>
+                <span class="skill-badge maven">Maven</span>
+              </div>
+
+              <div class="progress-labels">
+                <span>Java</span><span>78%</span>
+              </div>
+              <div class="progress mb-3"><div class="progress-bar bg-danger" style="width: 78%"></div></div>
+
+              <div class="progress-labels">
+                <span>MySQL</span><span>74%</span>
+              </div>
+              <div class="progress mb-3"><div class="progress-bar bg-primary" style="width: 74%"></div></div>
+
+              <div class="progress-labels">
+                <span>Git</span><span>70%</span>
+              </div>
+              <div class="progress mb-3"><div class="progress-bar bg-secondary" style="width: 70%"></div></div>
+
+              <div class="progress-labels">
+                <span>JUnit</span><span>64%</span>
+              </div>
+              <div class="progress mb-3"><div class="progress-bar bg-success" style="width: 64%"></div></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="text-center py-3">
-    <div class="container">
-      <p class="mb-0">© 2025 Mario - Portfolio made with Bootstrap 5</p>
+    <section id="proyectos" class="section-space">
+      <div class="container">
+        <div class="section-header mb-5">
+          <span class="section-kicker" data-i18n="projects.kicker">Proyectos</span>
+          <h2 data-i18n="projects.title">Trabajos que muestran mi estilo, proceso y evolución.</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="project-card">
+              <img src="images/alianzaReb.png" alt="Proyecto Star Wars fan-made web" class="project-image">
+              <div class="project-body">
+                <h3>Star Wars fan-made web</h3>
+                <p data-i18n="projects.starWars">Diseño web fan-made con enfoque visual y experiencia de usuario clara.</p>
+                <a href="https://web-star-wars.vercel.app" target="_blank" rel="noreferrer" class="btn btn-primary btn-sm" data-i18n="projects.seeProject">Ver proyecto</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="project-card">
+              <img src="images/image.png" alt="Proyecto Heart-Shaped Club" class="project-image">
+              <div class="project-body">
+                <h3>Heart-Shaped Club</h3>
+                <p data-i18n="projects.nirvana">Sitio web temático con identidad visual cuidada y estructura de contenido enfocada en marca.</p>
+                <a href="https://sage-sunflower-3abc10.netlify.app" target="_blank" rel="noreferrer" class="btn btn-primary btn-sm" data-i18n="projects.seeProject">Ver proyecto</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="project-card">
+              <img src="images/webAgainst.png" alt="Proyecto asociación Vidas Libres" class="project-image">
+              <div class="project-body">
+                <h3>Asociación Vidas Libres</h3>
+                <p data-i18n="projects.vidasLibres">Proyecto con enfoque social y de consciencia, orientado a transmitir empatía y ofrecer información útil.</p>
+                <a href="https://againstviolence.netlify.app" target="_blank" rel="noreferrer" class="btn btn-primary btn-sm" data-i18n="projects.seeProject">Ver proyecto</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="project-card">
+              <img src="images/unnamed.png" alt="Proyecto Kimetsu no Yaiba" class="project-image">
+              <div class="project-body">
+                <h3>Kimetsu no Yaiba</h3>
+                <p data-i18n="projects.kimetsu">Proyecto realizado durante una etapa formativa con enfoque de trabajo en equipo y diseño visual.</p>
+                <span class="project-badge" data-i18n="projects.confidential">Proyecto confidencial</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacion" class="section-space soft-panel">
+      <div class="container">
+        <div class="section-header mb-5">
+          <span class="section-kicker" data-i18n="education.kicker">Formación</span>
+          <h2 data-i18n="education.title">Mi camino académico y desarrollo profesional.</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-mark"></div>
+            <div class="timeline-content">
+              <div class="d-flex justify-content-between flex-wrap gap-3">
+                <div>
+                  <h3 data-i18n="education.dawTitle">CFGS Desarrollo de Aplicaciones Web</h3>
+                  <p class="timeline-place">I.E.S. Jacarandá</p>
+                </div>
+                <span class="timeline-year">2025 - 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-mark"></div>
+            <div class="timeline-content">
+              <div class="d-flex justify-content-between flex-wrap gap-3">
+                <div>
+                  <h3 data-i18n="education.historyTitle">Grado en Historia</h3>
+                  <p class="timeline-place">Universidad de Sevilla</p>
+                </div>
+                <span class="timeline-year">2020 - 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-mark"></div>
+            <div class="timeline-content">
+              <div class="d-flex justify-content-between flex-wrap gap-3">
+                <div>
+                  <h3 data-i18n="education.archaeologyTitle">Arqueología de campo y gestión cultural</h3>
+                  <p class="timeline-place">Universidad Pablo de Olavide</p>
+                </div>
+                <span class="timeline-year">2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section-space">
+      <div class="container">
+        <div class="section-header mb-5">
+          <span class="section-kicker" data-i18n="experience.kicker">Experiencia</span>
+          <h2 data-i18n="experience.title">Experiencia práctica, aprendizaje y entrega real.</h2>
+        </div>
+
+        <div class="experience-list">
+          <div class="experience-item">
+            <div>
+              <span class="experience-role" data-i18n="experience.caixaRole">Desarrollador web • Atención a la calidad</span>
+              <p class="experience-company">CaixaBank Tech</p>
+            </div>
+            <span class="experience-year">2026</span>
+          </div>
+
+          <div class="experience-item">
+            <div>
+              <span class="experience-role" data-i18n="experience.libraryRole">Auxiliar de biblioteca</span>
+              <p class="experience-company">Ayuntamiento de La Rinconada</p>
+            </div>
+            <span class="experience-year">2024</span>
+          </div>
+
+          <div class="experience-item">
+            <div>
+              <span class="experience-role" data-i18n="experience.archaeologyRole">Ayudante de campo y análisis patrimonial</span>
+              <p class="experience-company">Universidad Pablo de Olavide</p>
+            </div>
+            <span class="experience-year">2022</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-space contact-block">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-kicker" data-i18n="contact.kicker">Contacto</span>
+          <h2 data-i18n="contact.title">Hablemos de tu próximo proyecto.</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form id="contactForm" class="contact-form">
+              <div class="mb-3">
+                <label class="form-label" for="contactName" data-i18n="contact.name">Nombre</label>
+                <input id="contactName" name="name" type="text" class="form-control" data-i18n-placeholder="contact.namePlaceholder" placeholder="Tu nombre" autocomplete="name" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="contactEmail" data-i18n="contact.email">Email</label>
+                <input id="contactEmail" name="email" type="email" class="form-control" data-i18n-placeholder="contact.emailPlaceholder" placeholder="tuemail@ejemplo.com" autocomplete="email" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="contactMessage" data-i18n="contact.message">Mensaje</label>
+                <textarea id="contactMessage" name="message" class="form-control" rows="4" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Cuéntame qué necesitas..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-100" data-i18n="contact.send">Enviar</button>
+
+              <div id="contactSuccess" class="alert alert-success d-none mt-3" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-center text-md-start">
+      <p class="mb-0">© 2026 Mario Porras</p>
+
+      <div class="social-links">
+        <a href="https://github.com/mariopdls" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/marioporrasdelossantos/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:marioporra9@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
     </div>
   </footer>
+
+  <script>
+    window.portfolioTranslations = {
+      es: {
+        pageTitle: 'Mario Porras | Portfolio',
+        'nav.home': 'Inicio',
+        'nav.about': 'Sobre mí',
+        'nav.skills': 'Habilidades',
+        'nav.projects': 'Proyectos',
+        'nav.education': 'Formación',
+        'nav.experience': 'Experiencia',
+        'nav.contact': 'Contacto',
+        'hero.badge': 'Desarrollador web • Creativo • En crecimiento',
+        'hero.role': 'Desarrollador web con enfoque en interfaces modernas, experiencias útiles y soluciones digitales con impacto real.',
+        'hero.projectsBtn': 'Ver proyectos',
+        'hero.contactBtn': 'Hablemos',
+        'hero.available': 'Disponible para proyectos',
+        'about.kicker': 'Sobre mí',
+        'about.title': 'Creo productos digitales que combinan claridad, diseño y utilidad.',
+        'about.p1': 'Soy Mario Porras, estudiante de Desarrollo de Aplicaciones Web y graduado en Historia. Estoy construyendo mi carrera profesional en el desarrollo web, combinando pensamiento analítico, creatividad y capacidad de trabajo en equipo.',
+        'about.p2': 'Me interesa crear interfaces limpias, experiencias sencillas y soluciones útiles para personas y empresas. Me apasiona aprender tecnologías nuevas y aplicar lo aprendido en proyectos reales.',
+        'about.p3': 'Este portfolio es una muestra de mi evolución profesional. Cada proyecto me ayuda a mejorar, a comunicar mejor mis ideas y a crecer como desarrollador con una visión más estratégica.',
+        'skills.kicker': 'Habilidades',
+        'skills.title': 'Tecnologías y herramientas con las que trabajo.',
+        'skills.front': 'Front-end',
+        'skills.back': 'Back-end',
+        'projects.kicker': 'Proyectos',
+        'projects.title': 'Trabajos que muestran mi estilo, proceso y evolución.',
+        'projects.starWars': 'Diseño web fan-made con enfoque visual y experiencia de usuario clara.',
+        'projects.nirvana': 'Sitio web temático con identidad visual cuidada y estructura de contenido enfocada en marca.',
+        'projects.vidasLibres': 'Proyecto con enfoque social y de consciencia, orientado a transmitir empatía y ofrecer información útil.',
+        'projects.kimetsu': 'Proyecto realizado durante una etapa formativa con enfoque de trabajo en equipo y diseño visual.',
+        'projects.confidential': 'Proyecto confidencial',
+        'projects.seeProject': 'Ver proyecto',
+        'education.kicker': 'Formación',
+        'education.title': 'Mi camino académico y desarrollo profesional.',
+        'education.dawTitle': 'CFGS Desarrollo de Aplicaciones Web',
+        'education.historyTitle': 'Grado en Historia',
+        'education.archaeologyTitle': 'Arqueología de campo y gestión cultural',
+        'experience.kicker': 'Experiencia',
+        'experience.title': 'Experiencia práctica, aprendizaje y entrega real.',
+        'experience.caixaRole': 'Desarrollador web • Atención a la calidad',
+        'experience.libraryRole': 'Auxiliar de biblioteca',
+        'experience.archaeologyRole': 'Ayudante de campo y análisis patrimonial',
+        'contact.kicker': 'Contacto',
+        'contact.title': 'Hablemos de tu próximo proyecto.',
+        'contact.name': 'Nombre',
+        'contact.email': 'Email',
+        'contact.message': 'Mensaje',
+        'contact.send': 'Enviar',
+        'contact.namePlaceholder': 'Tu nombre',
+        'contact.emailPlaceholder': 'tuemail@ejemplo.com',
+        'contact.messagePlaceholder': 'Cuéntame qué necesitas...',
+        'form.validation': 'Por favor, rellena todos los campos antes de enviar.',
+        'form.success': '¡Mensaje enviado correctamente! Te responderé pronto.'
+      },
+      en: {
+        pageTitle: 'Mario Porras | Portfolio',
+        'nav.home': 'Home',
+        'nav.about': 'About',
+        'nav.skills': 'Skills',
+        'nav.projects': 'Projects',
+        'nav.education': 'Education',
+        'nav.experience': 'Experience',
+        'nav.contact': 'Contact',
+        'hero.badge': 'Web developer • Creative • Growing',
+        'hero.role': 'Web developer focused on modern interfaces, useful experiences and digital solutions with real impact.',
+        'hero.projectsBtn': 'View projects',
+        'hero.contactBtn': 'Let’s talk',
+        'hero.available': 'Available for projects',
+        'about.kicker': 'About me',
+        'about.title': 'I create digital products that blend clarity, design and utility.',
+        'about.p1': 'I’m Mario Porras, a student of Web Application Development and graduate in History. I am building my professional career in web development, combining analytical thinking, creativity and teamwork.',
+        'about.p2': 'I am interested in creating clean interfaces, simple experiences and useful solutions for people and companies. I am passionate about learning new technologies and applying them in real projects.',
+        'about.p3': 'This portfolio is a reflection of my professional evolution. Each project helps me improve, communicate my ideas better and grow as a developer with a more strategic vision.',
+        'skills.kicker': 'Skills',
+        'skills.title': 'Technologies and tools I work with.',
+        'skills.front': 'Front-end',
+        'skills.back': 'Back-end',
+        'projects.kicker': 'Projects',
+        'projects.title': 'Work that shows my style, process and growth.',
+        'projects.starWars': 'Fan-made website with a strong visual identity and a clear user experience.',
+        'projects.nirvana': 'Thematic website with a refined visual identity and content structure focused on branding.',
+        'projects.vidasLibres': 'Social and awareness project designed to convey empathy and provide useful information.',
+        'projects.kimetsu': 'Project developed during my training period with a focus on teamwork and visual design.',
+        'projects.confidential': 'Confidential project',
+        'projects.seeProject': 'View project',
+        'education.kicker': 'Education',
+        'education.title': 'My academic path and professional development.',
+        'education.dawTitle': 'Vocational Training in Web Application Development',
+        'education.historyTitle': 'Degree in History',
+        'education.archaeologyTitle': 'Field archaeology and cultural management',
+        'experience.kicker': 'Experience',
+        'experience.title': 'Hands-on experience, learning and real delivery.',
+        'experience.caixaRole': 'Web developer • Quality support',
+        'experience.libraryRole': 'Library assistant',
+        'experience.archaeologyRole': 'Field assistant and heritage analysis',
+        'contact.kicker': 'Contact',
+        'contact.title': 'Let’s talk about your next project.',
+        'contact.name': 'Name',
+        'contact.email': 'Email',
+        'contact.message': 'Message',
+        'contact.send': 'Send',
+        'contact.namePlaceholder': 'Your name',
+        'contact.emailPlaceholder': 'youremail@example.com',
+        'contact.messagePlaceholder': 'Tell me what you need...',
+        'form.validation': 'Please fill in all fields before sending.',
+        'form.success': 'Message sent successfully! I will get back to you soon.'
+      }
+    };
+
+    const langButtons = document.querySelectorAll('.lang-btn');
+    function applyTranslation(lang) {
+      const dict = window.portfolioTranslations[lang];
+      if (!dict) return;
+
+      document.documentElement.lang = lang;
+      document.title = dict.pageTitle;
+
+      document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const key = element.dataset.i18n;
+        if (dict[key]) {
+          element.textContent = dict[key];
+        }
+      });
+
+      document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+        const key = element.dataset.i18nPlaceholder;
+        if (dict[key]) {
+          element.placeholder = dict[key];
+        }
+      });
+
+      langButtons.forEach((button) => {
+        const isActive = button.dataset.lang === lang;
+        button.classList.toggle('active', isActive);
+      });
+    }
+
+    const savedLang = localStorage.getItem('portfolio-lang') || 'es';
+    applyTranslation(savedLang);
+
+    langButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const selectedLang = button.dataset.lang;
+        localStorage.setItem('portfolio-lang', selectedLang);
+        applyTranslation(selectedLang);
+      });
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="contact.js"></script>
